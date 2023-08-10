@@ -20,8 +20,10 @@ class _skState extends State<sk> {
 
   add(int a) {
     if (cnt % 2 == 0) {
-      l[a] = "x";
-      cnt++;
+      if(l[a]=="") {
+        l[a] = "x";
+        cnt++;
+      }
     } else {
       l[a] = "0";
       cnt++;
